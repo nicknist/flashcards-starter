@@ -1,6 +1,3 @@
-const data = require('./data');
-const prototypeQuestions = data.prototypeData;
-const util = require('./util');
 const Turn = require('../src/Turn');
 
 class Round {
@@ -9,6 +6,8 @@ class Round {
     this.currentCard = deck.cards[0];
     this.turnsTaken = 0;
     this.incorrectGuesses = [];
+    this.startTime = Date.now();
+    this.totalTime = null;
   }
 
   returnCurrentCard() {
@@ -30,12 +29,29 @@ class Round {
     if (this.incorrectGuesses.length === 0) {
       return 100;
     } else {
-      return Math.floor((1 - (this.incorrectGuesses.length / this.turnsTaken)) * 100);
+      return Math.floor((1 - (this.incorrectGuesses.length /
+        this.turnsTaken)) * 100);
     }
   }
 
+  calculateMinutes() {
+    let endTime = Date.now();
+    this.totalTime = Math.floor((endTime - this.startTime) / 1000);
+    let totalSeconds = this.totalTime;
+    let minutes = Math.floor(totalSeconds / 60);
+    return minutes;
+  }
+
+  calculateSeconds() {
+    let totalSeconds = this.totalTime % 60;
+    return totalSeconds;
+  }
+
   endRound() {
-    return `**Round Over!** You answered ${this.calculatePercentCorrect()}% of the questions correctly!`;
+    console.log(`**Round Over!** You answered
+      ${this.calculatePercentCorrect()}% of the questions correctly in
+      ${this.calculateMinutes()} minutes and ${this.calculateSeconds()}
+      seconds!`);
   }
 }
 

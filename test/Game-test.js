@@ -8,9 +8,8 @@ const Card = require('../src/Card');
 const Deck = require('../src/Deck');
 
 describe ('Game', function() {
-  //need any lets?
   let game;
-  //need a beforeEach??
+
   beforeEach( () => {
     game = new Game();
   });
@@ -49,12 +48,15 @@ describe ('Game', function() {
   });
 
 //   it.skip('start method should invoke printmessage in CLI', function() {
-//     expect(console.log(`Welcome to FlashCards! You are playing with ${deck.countCards()} cards.
-// -----------------------------------------------------------------------`)).to.equal(printMessage(deck, round));
+//     expect(console.log(`Welcome to FlashCards! You are playing with
+// ${deck.countCards()} cards.
+// ----------------------------------------------------------------------
+//-`)).to.equal(printMessage(deck, round));
 //
 //   });
 //
-//   it.skip('start method should invoke printquestion to kick off helper function that allows interaction in CLI', function() {
+//   it.skip('start method should invoke printquestion to kick off helper
+// function that allows interaction in CLI', function() {
 //
 //   });
 });
