@@ -9,6 +9,7 @@ Flash Cards is a fast-paced, timer-based, high intensity game. GET READY. There 
 ### How does it look? 
 
 Here's the start of the game in the command line:
+![Start Game](number1.gif)
 
 Here's some Gameplay:
 
