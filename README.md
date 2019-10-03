@@ -1,79 +1,46 @@
-# FlashCards Starter Kit
+# FlashCards!
 
-## Fork This Repo
+## Welcome to Flash Cards. The Fastest Game in the West.
 
-On the top right corner of this page, click the **Fork** button.
+### What is it?
 
-## Setup
+Flash Cards is a fast-paced, timer-based, high intensity game. GET READY. There are 30 cards with 3 options for every question. 
 
-Clone down the forked repo (from your GitHub). Since you don't want to name your project "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
+### How does it look? 
+
+Here's the start of the game in the command line:
+![Start Game](number1.gif)
+
+Here's some Gameplay:
+![Start Game](number2.gif)
+
+Here's how it ends and the message (Hit ctrl + C to exit the server):
+![Start Game](number3.gif)
+
+
+### How Do I play?
+
+* Once in the game. Use the arrow keys to move up and down, then hit enter when you've decided on your choice. 
+* After you've been given feedback of correct or incorrect, hit enter to move onto the next question
+* When you're finished, hit ctrl + c to leave the server and get back to the command line.
+
+
+### Setup!
+
+Clone down repo (from this GitHub). Since you don't want to name the game "flashcards-starter", you can use an optional argument when you run `git clone` (you replace the `[...]` with the terminal command arguments):
 
 ```bash
 git clone [remote-address] [what you want to name the repo]
 ```
 
-Once you have cloned the repo, change into the directory and install the library dependencies. Run:
+Once you have cloned the repo, change into the directory:
 
 ```bash
-npm install
+cd [whatever you named the directory]
 ```
 
-To verify that it is setup correctly, run `npm test` in your terminal. You should have 5 pending tests in your `Card` test file that show up.
-
-Running `node index.js` from the root of your project should result in the following message being displayed in your terminal: 
-
-```bash
-Node server running on port 3000
-```
-
-*Note that you will not need to you run your server until you are instantiating your `Game` class in Iteration 3. Prior to that, you should be using TDD to drive your code. You should check the functionality of your application by running your tests via `npm test`.*
-
-
-## Where to Add Your Code
-
-### JavaScript
-
-**Create all of your feature code files in the `src` directory.**
-
-We will be using the `module.exports` and `require` syntax to share code across files.
-
-## How to View Your Code in Action
-
-Once you are working through Iteration 3, you will want to start your server to test your functionality.
-In the terminal, run:
+Running `node index.js` from the root of the directory to start the game: 
 
 ```bash
 node index.js
 ```
-
-When the game is functioning appropriately, you will be prompted for each question, have the opportunity to select an answer, and will be given feedback. You will be able to play through the entire deck of cards:
-
-![flash cards example gif](https://media.giphy.com/media/1zkb1q58eTiTH6D7wc/giphy.gif)
-
----
-
-## Test Files Organization
-
-Similar to feature code, your test code needs to be put in a specific place for it to run successfully.
-
-**Put all of your test files in the `test` directory.** As a convention, all test filenames should end with `-test.js`. For instance: `Round-test.js`.
-
-## Running Your Tests
-
-Run your test suite using the command:
-
-```bash
-npm test
-```
-
-The test results will output to the terminal.
-
----
-
-## Linting Your Code
-
-Run the command in your terminal `npm run lint` to run the linter on your JavaScript code. There will be errors and warnings right from the start in this starter kit - the linter is still running successfully.
-
-Your linter will look at the JavaScript files you have within the `src` directory and the `test` directory. 
-
----
