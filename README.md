@@ -12,8 +12,10 @@ Here's the start of the game in the command line:
 ![Start Game](number1.gif)
 
 Here's some Gameplay:
+![Start Game](number2.gif)
 
 Here's how it ends and the message (Hit ctrl + C to exit the server):
+![Start Game](number3.gif)
 
 
 ### How Do I play?
