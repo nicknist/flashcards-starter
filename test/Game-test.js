@@ -32,9 +32,7 @@ describe ('Game', function() {
 
   it('start method should create Cards', function() {
     game.start();
-    game.deck.cards.forEach(function(card) {
-      expect(card).to.be.instanceof(Card);
-    })
+    expect(game.deck.cards.length).to.equal(30);
   });
 
   it('start method should create Deck', function() {
@@ -46,17 +44,4 @@ describe ('Game', function() {
     game.start();
     expect(game.deck.cards).to.deep.equal(prototypeQuestions);
   });
-
-//   it.skip('start method should invoke printmessage in CLI', function() {
-//     expect(console.log(`Welcome to FlashCards! You are playing with
-// ${deck.countCards()} cards.
-// ----------------------------------------------------------------------
-//-`)).to.equal(printMessage(deck, round));
-//
-//   });
-//
-//   it.skip('start method should invoke printquestion to kick off helper
-// function that allows interaction in CLI', function() {
-//
-//   });
 });

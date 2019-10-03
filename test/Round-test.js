@@ -60,9 +60,6 @@ describe('Round', function() {
   });
 
   it('takeTurn method should create a new Turn instance', function() {
-    //we can prove that a new Turn instance has been created if we are able to
-    //use the Turn methods
-    //the take Turn method uses turn.giveFeedback for these to function
     expect(round.takeTurn('sea otter')).to.equal('Correct!');
     expect(round.takeTurn('spleen')).to.equal('Incorrect!');
   });
